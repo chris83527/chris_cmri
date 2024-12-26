@@ -19,10 +19,10 @@ void setup() {
 
   pinMode(LED_BUILTIN, OUTPUT);
 
-  mcp23017_1.begin_I2C(0x00);
-  mcp23017_2.begin_I2C(0x01);
-  mcp23017_3.begin_I2C(0x04);
-  mcp23017_4.begin_I2C(0x05);
+  mcp23017_1.begin_I2C(0x20);
+  mcp23017_2.begin_I2C(0x21);
+  mcp23017_3.begin_I2C(0x24);
+  mcp23017_4.begin_I2C(0x25);
   ht.begin(0x00);
 
   for (int i = 0; i < 16; i++) {
